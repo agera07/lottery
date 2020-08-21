@@ -14,3 +14,16 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import { initLottery } from '../components/gambler';
+import { initEuroJack } from '../components/gambler';
+import { initPrimi } from '../components/gambler';
+
+
+document.addEventListener('turbolinks:load', () => {
+  initLottery();
+  initPrimi();
+  initEuroJack();
+
+
+});

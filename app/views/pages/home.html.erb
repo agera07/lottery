@@ -5,43 +5,61 @@
   <div class="lottery">
     <div class="lottery-header">
       Your lottery games
-      <% 5.times do  %>
-        <%= rand(0..9) %>
-      <% end %>
-    </div>
+      </div>
     <div class="start-button">
-      <button type="button" class="btn btn-primary">Start</button>
+      <button type="button" class="lotteryB btn btn-primary">Start</button>
+    </div>
+    <div class="results-lottery">
+      <ul>
+        <li>
+          <% 5.times do  %>
+          <%= rand(0..9) %>
+          <% end %>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="eurojackpot">
     <div class="lottery-header">
       Your eurjackpot games
-      <% 5.times do  %>
-        <%= rand(1..50) %>
-      <% end %>
-      Soles
-      <% 2.times do  %>
-        <%= rand(1..12) %>
-      <% end %>
     </div>
     <div class="start-button">
-      <button type="button" class="btn btn-primary">Start</button>
+      <button type="button" class="eurojackB btn btn-primary">Start</button>
     </div>
+      <div class="results-eurojack">
+        <ul>
+          <li>
+            <% 5.times do  %>
+            <%= rand(1..50) %>
+            <% end %>
+            Soles
+            <% 2.times do  %>
+            <%= rand(1..12) %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+  </div>
   <div class="primitive">
     <div class="lottery-header">
       Your primitive games
-      <% 6.times do  %>
-        <%= rand(0..49) %>
-      <% end %>
-      Reintegro
-      <%= rand(0..10) %>
     </div>
     <div class="start-button">
-      <button type="button" class="btn btn-primary">Start</button>
+      <button type="button" class="primitiveB btn btn-primary">Start</button>
     </div>
+      <div class="results-primitive">
+        <ul>
+          <li>
+            <% 6.times do  %>
+            <%= rand(0..49) %>
+            <% end %>
+            Reintegro
+            <%= rand(0..10) %>
+          </li>
+        </ul>
+      </div>
   </div>
 </div>
-
 
 
 
