@@ -3,9 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .header {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .gamble{
   display: flex;
   justify-content: space-evenly;
+}
+
+.list{
+  padding-left: 20px;
 }

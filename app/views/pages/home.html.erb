@@ -10,11 +10,9 @@
       <button type="button" class="lotteryB btn btn-primary">Start</button>
     </div>
     <div class="results-lottery">
-      <ul>
+      <ul class="list">
         <li>
-          <% 5.times do  %>
-          <%= rand(0..9) %>
-          <% end %>
+          <%=displayResultLot = rand(0..99999) %>
         </li>
       </ul>
     </div>
@@ -27,10 +25,9 @@
       <button type="button" class="eurojackB btn btn-primary">Start</button>
     </div>
       <div class="results-eurojack">
-        <ul>
+        <ul class="list">
           <li>
-            <% 5.times do  %>
-            <%= rand(1..50) %>
+            <%= displayResultEuro = 5.times do rand(1..50) end %>
             <% end %>
             Soles
             <% 2.times do  %>
@@ -48,7 +45,7 @@
       <button type="button" class="primitiveB btn btn-primary">Start</button>
     </div>
       <div class="results-primitive">
-        <ul>
+        <ul class="list">
           <li>
             <% 6.times do  %>
             <%= rand(0..49) %>
@@ -58,6 +55,11 @@
           </li>
         </ul>
       </div>
+  </div>
+</div>
+<div class="final-result">
+  <div class="final-result-lottery">
+    <%= displayResultLot %>
   </div>
 </div>
 

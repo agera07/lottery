@@ -30,3 +30,16 @@ function initPrimi() {
 }
 
 export {initPrimi};
+
+
+
+function displayLot() {
+ const Lotbutton = document.querySelector(".lotteryB")
+ const results = document.querySelector(".final-result-lottery")
+ results.style.display ="none";
+ Lotbutton.addEventListener('click', (event) => {
+  results.style.display = "block";
+ });
+}
+
+export {displayLot};

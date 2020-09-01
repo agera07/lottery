@@ -18,12 +18,14 @@ require("channels")
 import { initLottery } from '../components/gambler';
 import { initEuroJack } from '../components/gambler';
 import { initPrimi } from '../components/gambler';
+import { displayLot } from '../components/gambler';
 
 
 document.addEventListener('turbolinks:load', () => {
   initLottery();
   initPrimi();
   initEuroJack();
+  displayLot();
 
 
 });
